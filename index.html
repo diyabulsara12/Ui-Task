@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+
+<body>
+    <div class="wrapper d-flex">
+        <input type="checkbox"  id="toggle">
+        <aside class="sidebar">
+            
+            <div class="mt-25 ms-25">
+
+                <i class="dashboard-logo fa-thin fa-d"></i>
+                <span class="dashboard-text">Dashboard Kit</span>
+            </div>
+
+            <ul class="list-1">
+                <li><i class="fa-solid fa-chart-pie"></i><a class="list-item" href="">Overview</a></li>
+                <li  id="active-link"><i class="fa-solid fa-ticket"></i><a class="list-item"
+                        href="">Tickets</a></li>
+                <li><i class="fa-solid fa-lightbulb"></i><a class="list-item" href=""></i>Ideas</a>
+                </li>
+                <li><i class="fa-solid fa-address-book"></i><a class="list-item" href="">Contacts</a>
+                </li>
+                <li><i class="fa-solid fa-chart-pie"></i><a class="list-item" href="">Agents</a></li>
+                <li><i class="fa-sharp fa-solid fa-newspaper"></i><a class="list-item"
+                        href="">Articles</a></li>
+            </ul>
+            <ul class="list-2">
+                <li> <i class="fa-solid fa-gear"></i><a class="list-item search" href="">Settings</a></li>
+                <li ><i class="fa-solid fa-medal"></i><a class="list-item" href="">Subscription</a>
+                </li>
+            </ul>
+        </aside>
+        <div class="main d-flex col-direction flex-grow">
+            <header class="header">
+            <div class="left-div d-flex  ">
+                <label for="toggle">
+                    <img class="ham-img" src="./assests/hambuger-menu .png" alt="Hamburger"></label>
+                <h2 class="nav-caption">Tickets</h2>
+            </div>
+                
+                    <div class="header-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      
+                        <i class="fa-solid fa-bell notification-bell notification"></i>
+                        <span class="user-name">Jones ferdinand</span>
+                        <img class="profile-logo" src="./assests/profile-pic.png" alt="">
+                    </div>
+            </header>
+            <div class="list-card   space-btw">
+                <div class=" mt-30 ms-20  me-20 d-flex space-btw">
+                    <h3 class="caption-3">All Tickets</h3>
+                    <div>
+                        <i class="fa-solid fa-arrow-up-wide-short"></i>
+                        <span class="header-caption">Sort</span>
+                        <i class="fa-solid fa-filter"></i>
+                        <span class="header-caption">Filter</span>
+                    </div>
+                </div>
+                <div class="table-div">
+                    <table class="ticket-table">
+                        <thead>
+                            <th class="table-header ps-20">
+                                Ticket-details
+                            </th>
+                            <th class="table-header">Customer name</th>
+                            <th class="table-header">Date</th>
+                            <th class="table-header">Priority</th>
+                            <th class="table-header"></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex ps-20 ">
+                                        <img class="profile-logo" src="./assests/profile-pic.png" alt="prifile-pic">
+                                        <div class="d-flex col-direction">
+                                            <h4 class="caption-1">Contact Email not linked</h4>
+                                            <span class="caption-2">updatede 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">Tom Cruise</h4>
+                                        <span class="caption-2">on 24.5.2019</span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">May 26,2019</h4>
+                                        <span class="caption-2">6.30 pm</span>
+                                    </div>
+                                </td>
+                                <td><span class="high-badge">High</span></td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex ps-20">
+                                        <img class="profile-logo" src="./assests/profile-pic.png" alt="prifile-pic">
+
+                                        <div class="d-flex col-direction">
+                                            <h4 class="caption-1">Contact Email not linked</h4>
+                                            <span class="caption-2">updatede 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">Tom Cruise</h4>
+                                        <span class="caption-2">on 24.5.2019</span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">May 26,2019</h4>
+                                        <span class="caption-2">6.30 pm</span>
+                                    </div>
+                                </td>
+                                <td><span class="low-badge">low</span></td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex  ps-20 ">
+                                        <img class="profile-logo" src="./assests/profile-pic.png" alt="prifile-pic">
+                                        <div class="d-flex col-direction">
+                                            <h4 class="caption-1">Contact Email not linked</h4>
+                                            <span class="caption-2">updatede 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">Tom Cruise</h4>
+                                        <span class="caption-2">on 24.5.2019</span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">May 26,2019</h4>
+                                        <span class="caption-2">6.30 pm</span>
+                                    </div>
+                                </td>
+                                <td><span class="high-badge">High</span></td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex  ps-20 ">
+                                        <img class="profile-logo" src="./assests/profile-pic.png" alt="prifile-pic">
+                                        <div class="d-flex col-direction">
+                                            <h4 class="caption-1">Contact Email not linked</h4>
+                                            <span class="caption-2">updatede 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">Tom Cruise</h4>
+                                        <span class="caption-2">on 24.5.2019</span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">May 26,2019</h4>
+                                        <span class="caption-2">6.30 pm</span>
+                                    </div>
+                                </td>
+                                <td><span class="high-badge">High</span></td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex  ps-20 ">
+                                        <img class="profile-logo" src="./assests/profile-pic.png" alt="prifile-pic">
+                                        <div class="d-flex col-direction">
+                                            <h4 class="caption-1">Contact Email not linked</h4>
+                                            <span class="caption-2">updatede 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">Tom Cruise</h4>
+                                        <span class="caption-2">on 24.5.2019</span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">May 26,2019</h4>
+                                        <span class="caption-2">6.30 pm</span>
+                                    </div>
+                                </td>
+                                <td><span class="low-badge">low</span></td>
+                                <td> <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex  ps-20 ">
+                                        <img class="profile-logo" src="./assests/profile-pic.png" alt="prifile-pic">
+                                        <div class="d-flex col-direction">
+                                            <h4 class="caption-1">Contact Email not linked</h4>
+                                            <span class="caption-2">updatede 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">Tom Cruise</h4>
+                                        <span class="caption-2">on 24.5.2019</span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">May 26,2019</h4>
+                                        <span class="caption-2">6.30 pm</span>
+                                    </div>
+                                </td>
+                                <td><span class="high-badge">High</span></td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex  ps-20 ">
+                                        <img class="profile-logo" src="./assests/profile-pic.png" alt="prifile-pic">
+                                        <div class="d-flex col-direction">
+                                            <h4 class="caption-1">Contact Email not linked</h4>
+                                            <span class="caption-2">updatede 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">Tom Cruise</h4>
+                                        <span class="caption-2">on 24.5.2019</span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">May 26,2019</h4>
+                                        <span class="caption-2">6.30 pm</span>
+                                    </div>
+                                </td>
+                                <td><span class="normal-badge">Normal</span></td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex  ps-20 ">
+                                        <img class="profile-logo" src="./assests/profile-pic.png" alt="prifile-pic">
+                                        <div class="d-flex col-direction">
+                                            <h4 class="caption-1">Contact Email not linked</h4>
+                                            <span class="caption-2">updatede 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">Tom Cruise</h4>
+                                        <span class="caption-2">on 24.5.2019</span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">May 26,2019</h4>
+                                        <span class="caption-2">6.30 pm</span>
+                                    </div>
+                                </td>
+                                <td><span class="normal-badge">Normal</span></td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex  ps-20 ">
+                                        <img class="profile-logo" src="./assests/profile-pic.png" alt="prifile-pic">
+                                        <div class="d-flex col-direction">
+                                            <h4 class="caption-1">Contact Email not linked</h4>
+                                            <span class="caption-2">updatede 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">Tom Cruise</h4>
+                                        <span class="caption-2">on 24.5.2019</span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="d-flex col-direction">
+                                        <h4 class="caption-1">May 26,2019</h4>
+                                        <span class="caption-2">6.30 pm</span>
+                                    </div>
+                                </td>
+                                <td><span class="normal-badge">Normal</span></td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="footer d-flex">
+                    <span class="footer-text">Rows per page: 8</span>
+                    <i class="page-down fa-solid fa-sort-down"></i>
+                    <span class="footer-text">1-8 of 1240</span>
+                    <i class="less-than fa-solid fa-less-than"></i>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
